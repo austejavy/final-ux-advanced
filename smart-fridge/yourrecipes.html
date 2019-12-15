@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRAM home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+    <div class="menu">
+       <a href="recipes.html">
+            <img src="bookactive.png" class="menuiconACTIVE">
+        </a>
+        <a href="fridge.html">
+            <img src="fridge.png" class="menuicon">
+        </a>
+        <a href="search.html">
+            <img src="home-button.png" class="menuicon">
+        </a>
+        <a href="talk.html">
+            <img src="speech.png" class="menuicon">
+        </a>
+        <a href="">
+            <img src="barcode.png" class="menuicon">
+        </a>
+    </div>
+    </nav>
+    <a href="search.html"> <img src="LOGO.png" alt="GRAM logo" class="smalllogo"></a>
+    
+    <h1>YOUR RECIPES</h1>
+     <img onclick="openpopup1()" src="icons/button.png"id="addnew">
+    <img onclick="closepopup1()" src="icons/button.png" id="addnew2">
+    <div id="popuptext">
+        <img src="icons/naujas.png" alt="table">
+    </div>
+    
+    <div>
+    <div class="iconrectangleleft">
+    
+        <img src="food/pancakes.jpg" alt="icon" class="foodleft">
+        <br>
+        <h2>FLUFFY PANCAKES</h2>
+
+    </div>
+    <div class="iconrectangleright">
+    <a href="soup.html">
+        <img src="food/chill.jpg" alt="icon" class="foodright">
+        <br>
+        <h2>CHILLI SOUP</h2>
+    </a>
+    </div>
+    <br><br><br>
+    <div class="iconrectangleleft">
+        <img src="food/ice.jpg" alt="icon" class="foodleft">
+        <br>
+        <h2>HOMEMADE IS</h2>
+
+    </div>
+    <div class="iconrectangleright">
+            <img src="food/cupcakes.jpg" alt="icon" class="foodright">
+        <br>
+        <h2>CUPCAKES</h2>
+    </div>
+    </div>
+    <br><br><br><br><br>
+    <script>function openpopup1() {
+            document.getElementById("popuptext").style.display = "block";
+            document.getElementById("addnew").style.display = "none";
+            document.getElementById("addnew2").style.display = "block";
+        }
+
+        function closepopup1() {
+            document.getElementById("popuptext").style.display = "none";
+            document.getElementById("addnew").style.display = "block";
+            document.getElementById("addnew2").style.display = "none";
+        }</script>
+</body>
+</html>
